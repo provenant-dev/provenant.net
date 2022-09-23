@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 720px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  padding: 0.5em 2em;
+  width: 720px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: white;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slides > div > p {
+    margin-top: 6px;
+}
+
+.slider > a {
+  display: inline-flex;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: .4em;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #e4ebf5;
+}
+#tagline {
+    padding-bottom: 50px;
+}
+#banner {
+    display: flex;
+    height: 300px;
+    background-image: url(logo-white-on-dark-100x20.png);
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+    font-size: 50px;
+    background-color: #014db5;
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+}
+#content {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4ebf5;
+}
+.summary {
+  text-align: center;
+  font-style: italic;
+}
+.summary > em {
+  color: #014db5;
+  font-style: normal;
+}
