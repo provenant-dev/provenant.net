@@ -5,6 +5,27 @@
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
     </style>
     <link rel="stylesheet" type="text/css" href="carousel.css" />
+    <script>
+function highlight(n) {
+  unhighlight();
+  el("link-" + n.toString()).classList.add("hi");
+}
+
+function unhighlight() {
+  for (let i = 1; i <= 5; ++i) {
+    el("link-" + i.toString()).classList.remove("hi");
+  }
+}
+
+function el(id) {
+    return document.getElementById(id);
+}
+
+window.addEventListener('hashchange',() =>{
+    let l = location.hash
+    highlight( l[l.length - 1])
+});
+    </script>
 </head>
 <body>
 <div id="banner">
@@ -13,18 +34,17 @@
 <div id="content">
 <div class="slider">
 
-  <a href="#slide-1">robocalls</a>
-  <a href="#slide-2">phishing</a>
-  <a href="#slide-3">smishing</a>
-  <a href="#slide-4">documents</a>
-  <a href="#slide-5">deep fakes</a>
+  <a id="link-1" href="#slide-1">smishing</a>
+  <a id="link-2" href="#slide-2">phishing</a>
+  <a id="link-3" href="#slide-3">deep fakes</a>
+  <a id="link-4" href="#slide-4">hacked docs</a>
+  <a id="link-5" href="#slide-5">robocalls</a>
 
   <div class="slides">
     <div id="slide-1">
-<p>Unsolicited calls from questionable sources are rife. We answer scammers or telemarketers during work meetings and family events, and feel victimized.</p>
-<p>Regulators expect carriers to fix this. But caller ID is iffy. Maybe the caller's phone number is in a database, but the number can be faked...</p>
-<p>Provenant's Origin platform changes this. Every call gets a cryptographically verifiable origin. This doesn't just prove who called; it proves where their business is registered, and what kind of business it is.</p>
-<p class="summary">Goodbye, robocalls. Hello, <em>authentic digital communication</em>.</p>
+<p>A text warns that our account has been compromised; we must log in right away, at the conveniently included link, to reset our password!</p>
+<p>Provenant's Origin platform makes sure such texts are flagged as a scam. Every text gets a cryptographically verifiable origin. This holds the original sender, as well as intermediaries in the telecom delivery pipeline, accountable.</p>
+<p class="summary">Goodbye, smishing. Hello, <em>authentic digital communication</em>.</p>
     </div>
     <div id="slide-2">
 <p>Emails say they're from our bank, our government, or our service provider. They have the right logo. They say the right things. But who really sent them?</p>
@@ -32,19 +52,20 @@
 <p class="summary">Goodbye, phishing. Hello, <em>authentic digital communication</em>.</p>
     </div>
     <div id="slide-3">
-<p>A text warns that our account has been compromised; we must log in right away, at the conveniently included link, to reset our password!</p>
-<p>Provenant's Origin platform makes sure such texts are flagged as a scam. Every text gets a cryptographically verifiable origin. This holds the original sender, as well as intermediaries in the telecom delivery pipeline, accountable.</p>
-<p class="summary">Goodbye, smishing. Hello, <em>authentic digital communication</em>.</p>
+<p>An online news article quotes a famous personality saying something outrageous. There's video to prove the statement actually happened. But is the video real, or a deep fake? Does the journalist cite sources carefully, in a verifiable chain of evidence?</p>
+<p>Provenant's Origin platform makes content and citations verifiable. Every fact can be linked to its source, and content becomes tamper-proof. The content can be linked strongly to the public, non-repudiable reputation of its original creators.</p>
+<p class="summary">Goodbye, deep fakes. Hello, <em>authentic digital communication</em>.</p>
     </div>
     <div id="slide-4">
 <p>A company posts their latest financial report. The numbers are surprising, and their website had a strange outage that might indicate hacking. Is the report trustworthy?</p>
 <p>Provenant's Origin platform makes signing and verification of whole documents, or individual facts in documents, easy. Every signed document becomes tamper-proof, with a cryptographically verifiable origin. The author and attestors are known with certainty.</p>
-<p class="summary">Goodbye, questionable documents. Hello, <em>authentic digital communication</em>.</p>
+<p class="summary">Goodbye, hacked documents. Hello, <em>authentic digital communication</em>.</p>
     </div>
     <div id="slide-5">
-<p>An online news article quotes a famous personality saying something outrageous. There's video to prove the statement actually happened. But is the video real, or a deep fake? Does the journalist cite sources carefully, in a verifiable chain of evidence?</p>
-<p>Provenant's Origin platform makes content and citations verifiable. Every fact can be linked to its source, and content becomes tamper-proof. The content can be linked strongly to the public, non-repudiable reputation of its original creators.</p>
-<p class="summary">Goodbye, deep fakes. Hello, <em>authentic digital communication</em>.</p>
+<p>Unsolicited calls from questionable sources are rife. We answer scammers or telemarketers during work meetings and family events, and feel victimized.</p>
+<p>Regulators expect carriers to fix this. But caller ID is iffy. Maybe the caller's phone number is in a database, but the number can be faked...</p>
+<p>Provenant's Origin platform changes this. Every call gets a cryptographically verifiable origin. This doesn't just prove who called; it proves where their business is registered, and what kind of business it is.</p>
+<p class="summary">Goodbye, robocalls. Hello, <em>authentic digital communication</em>.</p>
     </div>
   </div>
 </div>

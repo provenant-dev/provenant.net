@@ -36,6 +36,7 @@
   margin-right: 50px;
   border-radius: 10px;
   background: white;
+  color: #444;
   transform-origin: center center;
   transform: scale(1);
   transition: transform 0.5s;
@@ -52,19 +53,23 @@
 .slider > a {
   display: inline-flex;
   height: 1.5rem;
-  background: white;
   text-decoration: none;
   align-items: center;
   justify-content: center;
   border-radius: .4em;
-  margin: 0 0 0.5rem 0;
+  margin: 0.5rem;
+  padding: 2px 6px;
   position: relative;
+  border-left: solid 2px #e4ebf5;
+  border-right: solid 2px #e4ebf5;
 }
-.slider > a:active {
-  top: 1px;
+.slider > a:hover {
+  border-left: solid 2px #014db5;
+  border-right: solid 2px #014db5;
 }
-.slider > a:focus {
-  background: #000;
+.slider > a:focus, a.hi {
+  background-color: #014db5;
+  color: white;
 }
 
 /* Don't need button navigation */
