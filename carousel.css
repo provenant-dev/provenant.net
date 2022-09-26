@@ -1,12 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
 .slider {
   width: 720px;
   overflow: hidden;
 }
-
 .slides {
   display: flex;
   
@@ -45,11 +43,9 @@
   flex-direction: column;
   justify-content: center;
 }
-
 .slides > div > p {
     margin-top: 6px;
 }
-
 .slider > a {
   display: inline-flex;
   height: 1.5rem;
@@ -71,24 +67,25 @@
   background-color: #014db5;
   color: white;
 }
-
 /* Don't need button navigation */
 @supports (scroll-snap-type) {
   .slider > a {
     display: none;
   }
 }
-
 html, body {
   margin: 0px;
   padding: 0px;
   height: 100%;
   overflow: hidden;
   font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11pt;
   background-color: #e4ebf5;
+  min-width: 320px;
 }
 #tagline {
     padding-bottom: 50px;
+    text-align: center;
 }
 #banner {
     display: flex;
@@ -116,4 +113,21 @@ html, body {
 .summary > em {
   color: #014db5;
   font-style: normal;
+}
+@media screen and (max-width: 750px) {
+  .slider > a { margin: 0.5rem 0; }
+  .slider { width: 600px; }
+  .slides > div { width: 600px; }
+}
+@media screen and (max-width: 600px) {
+  .slider > a { font-size: 90%; }
+  #tagline { font-size: 42px; }
+  .slider { width: 500px; }
+  .slides > div { width: 500px; font-size: 90% }
+}
+@media screen and (max-width: 500px) {
+  .slider > a { font-size: 80%; }
+  #tagline { font-size: 36px; }
+  .slider { width: 96%; }
+  .slides > div { width: 96%; font-size: 80% }
 }
