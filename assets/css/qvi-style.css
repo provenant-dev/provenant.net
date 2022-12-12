@@ -1,0 +1,349 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #444444;
+    overflow: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#container {
+    padding: 0;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+a {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: #F9B334;
+}
+
+/*--------------------------------------------------------------
+# Provenent-as-QVI Section
+--------------------------------------------------------------*/
+
+.provenant-as-qvi {
+    padding: 86px 86px 72px 86px;
+    background: #004CB5;
+    /* padding: 86px; */
+}
+
+.provenant-as-qvi hr {
+    /* background: #FFFFFF; */
+    opacity: 0.2;
+    border-top: 1px solid #FFFFFF;
+    margin-top: 5%;
+}
+
+.header {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 488px;
+    transition: all 0.5s;
+}
+
+.tagline p {
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 94px;
+    color: #FBFBFB;
+}
+
+
+.get-vlei {
+    display: flex;
+    padding-top: 60px;
+}
+
+.get-vlei .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    align-items: center;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    padding-bottom: 20px;
+}
+
+.get-vlei .description {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+
+.get-vlei .description a {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.get-vlei .description a:hover {
+    text-decoration-line: underline;
+    color: #F9B334;
+}
+
+.gleif-trustmark-box {
+    height: 458px;    
+    margin-top: 112px;
+    margin-bottom: 72px;
+}
+
+.gleif-trustmark-box .gleif-trustmark-bg {
+    align-self: end;
+    height: 404px;
+}
+
+.gleif-trustmark-box .gleif-trustmark-badge {
+    position: absolute;
+}
+
+.gleif-trustmark-box .gleif-trustmark {
+    width: 280px;
+    height: 418px;
+    position: absolute;
+}
+
+.vlei-read-more {
+    padding-top: 4px;
+}
+
+.vlei-read-more p {
+
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+
+@media (max-width: 575.98px) {}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+
+.pricing {
+    padding: 86px;
+    background: #FFFFFF;
+}
+
+.pricing .title h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+}
+
+.price-table-container {
+    background: #F0F6FF;
+    border-radius: 6px;
+    padding: 42px;
+    margin: 32px 0 0 0;
+}
+
+.price-table-container .price-item {
+    border-bottom: 1px dashed #bfcfe7;
+}
+
+
+.price-table-container h4 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.price-table-container h5 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+    padding-bottom: 30px;
+}
+
+.price-table-container .price-item {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+    margin-bottom: 14px;
+}
+
+/*--------------------------------------------------------------
+# About Us Section
+--------------------------------------------------------------*/
+
+.about-us {
+    background: #FFFFFF;
+    padding: 0px 86px 86px 86px;
+}
+
+.about-us .title h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+}
+
+.about-us .subtitle p {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+}
+
+.about-us .description {
+    column-count: 2;
+}
+
+.about-us .description p {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    text-indent: 22px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+}
+
+.about-us .learn-more p {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+}
+
+.about-us .learn-more a {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #111111;
+    mix-blend-mode: normal;
+}
+
+.about-us .learn-more a {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;    
+    letter-spacing: 0.5px;
+    text-decoration-line: underline;
+    font-feature-settings: 'ss05' on, 'ss04' on;    
+    color: #111111;
+    mix-blend-mode: normal;
+}
+
+.about-us .learn-more a:hover {    
+    color: #004CB5;
+}
+
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+
+.footer {
+    padding: 86px 86px 64px 86px;
+    background: #FFFFFF;
+}
+
+.footer .footer-separator {
+    border-top: 1px solid #004CB5;
+    opacity: 1;
+}
+
+.footer .copyright p {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'ss05' on, 'ss04' on;
+    color: #004CB5;
+    mix-blend-mode: normal;
+}
