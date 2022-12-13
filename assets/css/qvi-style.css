@@ -196,7 +196,8 @@ a:hover {
         height: 300px;
         margin-top: 3em;
     }
-/* 
+
+    /* 
     .gleif-trustmark-box .gleif-trustmark-bg {
         align-self: end;
         height: 256px;
@@ -210,11 +211,11 @@ a:hover {
     .only-show-lg {
         display: none;
     }
-    
+
     .only-show-md {
         display: none;
     }
-    
+
     .only-show-sm {
         display: flex;
     }
@@ -265,11 +266,11 @@ a:hover {
     .only-show-lg {
         display: none;
     }
-    
+
     .only-show-md {
         display: flex;
     }
-    
+
     .only-show-sm {
         display: none;
     }
@@ -541,6 +542,10 @@ a:hover {
     font-feature-settings: 'ss05' on, 'ss04' on;
     color: #004CB5;
     mix-blend-mode: normal;
+}
+
+.footer .copyright p a {
+    color: #004CB5;
 }
 
 @media (max-width: 575.98px) {
