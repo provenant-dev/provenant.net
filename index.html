@@ -39,17 +39,22 @@
         <section id="provenant-as-qvi" class="provenant-as-qvi">
             <div class="header d-flex">
                 <div class="logo">
-                    <a href="#">
+                    <!-- <a href="#">
                         <img src="assets/img/provenant-logo.png" alt="" class="img-fluid">
-                    </a>
+                    </a> -->
+                    <picture>
+                        <source media="(max-width: 575.98px)" srcset="assets/img/provenant-logo-sm.png">
+                        <source media="(max-width: 991.98px)" srcset="assets/img/provenant-logo-md.png">
+                        <img src="assets/img/provenant-logo.png" class="img-fluid" alt="Provenant logo">
+                    </picture>
                 </div>
-                <div class="tagline col-lg-10">
+                <div class="tagline">
                     <p>Authentic Digital Communication
                     </p>
                 </div>
             </div>
             <hr>
-            <div class="get-vlei row col-lg-8 col-md-10">
+            <div class="get-vlei row col-xxl-10 col-xl-10 col-lg-10 col-md-10 ">
                 <!-- <div class="col-lg-8 d-flex "> -->
                 <p class="title">Get vLEI Credentials</p>
                 <p class="description">Provenant is a <a target="gleif" href="https://www.gleif.org/en/vlei/the-lifecycle-of-a-vlei-issuer/gleif-qualification-of-vlei-issuers">Qualified vLEI Issuer</a> (QVI). This means that we are officially
@@ -66,29 +71,47 @@
             </div>
 
             <div class="gleif-trustmark-box d-flex justify-content-center">
-                <img src="assets/img/trustmark-bg-lg.png" class="gleif-trustmark-bg img-fluid w-100 "
+                <img src="assets/img/trustmark-bg-lg.png" class="gleif-trustmark-bg img-fluid w-100 only-show-lg"
                     alt="GLEIF-Trustmark-bg">
+                <img src="assets/img/trustmark-bg-md.png" class="gleif-trustmark-bg img-fluid w-100 only-show-md"
+                    alt="GLEIF-Trustmark-bg">
+                <img src="assets/img/trustmark-bg-sm.png" class="gleif-trustmark-bg img-fluid w-100 only-show-sm"
+                    alt="GLEIF-Trustmark-bg">
+                <!-- <picture class="gleif-trustmark-bg ">
+                    <source media="(max-width: 575.98px)" srcset="assets/img/trustmark-bg-sm.png">
+                    <source media="(max-width: 767.98px)" srcset="assets/img/trustmark-bg-md.png">
+                    <source media="(max-width: 991.98px)" srcset="assets/img/trustmark-bg-md.png">
+                    <source media="(max-width: 1199.98px)" srcset="assets/img/trustmark-bg-lg.png">
+                    <source media="(max-width: 1399.98px)" srcset="assets/img/trustmark-bg-lg.png">
+                    <img src="assets/img/trustmark-bg-lg.png" class="gleif-trustmark-bg img-fluid w-100 "
+                        alt="GLEIF-Trustmark-bg">
+                </picture> -->
+
                 <!-- <div class="d-flex justify-content-center gleif-trustmark-badge"> -->
-                <img src="assets/img/gleif-trustmark.svg" class="img-fluid gleif-trustmark" alt="GLEIF-Trustmark" onclick="window.open('https://provenant.net/certificate.pdf')">
+                <!-- <img src="assets/img/gleif-trustmark-lg.png" class="img-fluid gleif-trustmark" alt="GLEIF-Trustmark"> -->
                 <!-- </div> -->
+
+                <picture class="gleif-trustmark">
+                    <source media="(max-width: 575.98px)" srcset="assets/img/gleif-trustmark-sm.png">
+                    <source media="(max-width: 991.98px)" srcset="assets/img/gleif-trustmark-md.png">
+                    <img src="assets/img/gleif-trustmark-lg.png" class="img-fluid gleif-trustmark1"
+                        alt="GLEIF-Trustmark">
+                </picture>
             </div>
             <hr>
-
             <div class="vlei-read-more row col-lg-8 col-md-8 ">
                 <p>Read more about Issuing LE vLEIs <a target="_blank" href="issuing-le-vleis.pdf">here</a> and Terms and Conditions between Provenant and
                     its customers <a target="_blank" href="contract.pdf">here</a>.</p>
             </div>
-
-
         </section>
 
-        <section id="pricing" class="pricing">
+        <section class="pricing">
             <div class="title">
                 <h4>Pricing</h4>
             </div>
 
             <div class="price-table-container no-margin">
-                <h5>Initial Issuance</h5>
+                <h4 class="price-section-title font-weight-600 pt-1">Initial Issuance</h4>
                 <div class="price-item d-flex justify-content-between no-margin align-items-center">
                     <!-- <div class=""> -->
                     <p>Standard entity - Legal Entity vLEI</p>
@@ -109,7 +132,7 @@
                 </div>
 
 
-                <h4>Hosted Wallets</h4>
+                <h4 class="price-section-title font-weight-700">Hosted Wallets</h4>
                 <div class="price-item d-flex justify-content-between">
                     <p>Cold (start/stop on demand), <i>Support included</i></p>
                     <p>100 USD/year</p>
@@ -119,7 +142,7 @@
                     <p>400 USD/year</p>
                 </div>
 
-                <h4>Renewals and Bundles</h4>
+                <h4 class="price-section-title font-weight-700">Renewals and Bundles</h4>
                 <div class="price-item d-flex justify-content-between">
                     <p>Small business bundle <br /><i>LE vLEI, 1 OOR vLEI, 1 Cold hosted wallet, Support</i></p>
                     <p>200 USD/year</p>
@@ -130,7 +153,7 @@
                     <p>1000 USD/year</p>
                 </div>
 
-                <h4>Revocations</h4>
+                <h4 class="price-section-title font-weight-700">Revocations</h4>
                 <div class="price-item d-flex justify-content-between">
                     <p>Free</p>
                     <p>No charge</p>
@@ -139,7 +162,7 @@
 
         </section>
 
-        <section id="about-us" class="about-us">
+        <section class="about-us">
             <div class="title">
                 <h4>About</h4>
             </div>
@@ -149,7 +172,7 @@
                     brands that they receive these communications from.</p>
             </div>
 
-            <div class="row col-lg-8 col-md-10 pt-4">
+            <div class="row col-lg-8 col-md-8 pt-4">
                 <div class="description">
                     <p>At Provenant, we believe that authentic, end-verifiable digital
                         communications are essential for protecting both consumers and brands from these threats. That's
@@ -167,7 +190,7 @@
                 </div>
             </div>
 
-            <div class="learn-more row col-lg-8 col-md-10 pt-5">
+            <div class="learn-more row col-lg-8 col-md-10 ">
                 <p>To learn more about Origin, vLEIs, or Provenant in general, please contact us at <a
                         href="mailto:info@provenant.net">info@provenant.net</a>
                 </p>
