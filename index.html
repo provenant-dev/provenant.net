@@ -1,74 +1,205 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>PROVENANT - authentic digital communication</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
-    </style>
-    <link rel="stylesheet" type="text/css" href="carousel.css" />
-    <script>
-function highlight(n) {
-  unhighlight();
-  el("link-" + n.toString()).classList.add("hi");
-}
 
-function unhighlight() {
-  for (let i = 1; i <= 5; ++i) {
-    el("link-" + i.toString()).classList.remove("hi");
-  }
-}
+    <title>PROVENANT - authentic digital communication</title>
+    <meta name="description" content="authentic digital communication">
+    <meta name="keywords" content="provenant">
 
-function el(id) {
-    return document.getElementById(id);
-}
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-window.addEventListener('hashchange',() =>{
-    let l = location.hash
-    highlight( l[l.length - 1])
-});
-    </script>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Site CSS File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/qvi-style.css" />
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-<div id="banner">
-  <div id="tagline">Authentic Digital Communication</div>
-</div>
-<div id="content">
-<div class="slider">
 
-  <a id="link-1" href="#slide-1">smishing</a>
-  <a id="link-2" href="#slide-2">phishing</a>
-  <a id="link-3" href="#slide-3">deep fakes</a>
-  <a id="link-4" href="#slide-4">hacked docs</a>
-  <a id="link-5" href="#slide-5">robocalls</a>
+    <div class="container-fluid no-padding">
 
-  <div class="slides">
-    <div id="slide-1">
-<p>A text warns that our account has been compromised; we must log in right away, at the conveniently included link, to reset our password!</p>
-<p>Provenant's Origin platform makes sure such texts are flagged as a scam. Every text gets a cryptographically verifiable origin. This holds the original sender, as well as intermediaries in the telecom delivery pipeline, accountable.</p>
-<p class="summary">Goodbye, smishing. Hello, <em>authentic digital communication</em>.</p>
+        <section id="provenant-as-qvi" class="provenant-as-qvi">
+            <div class="header d-flex">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/img/provenant-logo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="tagline col-lg-10">
+                    <p>Authentic Digital Communication
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="get-vlei row col-lg-8 col-md-10">
+                <!-- <div class="col-lg-8 d-flex "> -->
+                <p class="title">Get vLEI Credentials</p>
+                <p class="description">Provenant is a <a target="gleif" href="https://www.gleif.org/en/vlei/the-lifecycle-of-a-vlei-issuer/gleif-qualification-of-vlei-issuers">Qualified vLEI Issuer</a> (QVI). This means that we are officially
+                    enrolled in <a target="gleif" href="https://gleif.org">GLEIF</a>'s program for issuing
+                    these important credentials, and we have <a href="signed-agreement.pdf">committed</a> to be bound by the terms of the <a
+                        href="https://www.gleif.org/en/vlei/the-lifecycle-of-a-vlei-issuer/gleif-qualification-of-vlei-issuers/required-documents">vLEI Governance Framework</a>.
+                    We can help your organization begin to use its LEI in new digital contexts.</p>
+
+                <p class="description">If you are interested in working with us, please send an email to
+                    <a href="mailto:vlei-support@provenant.net">vlei-support@provenant.net</a>,
+                    and we'll reply with application materials and instructions.
+                </p>
+                <!-- </div> -->
+            </div>
+
+            <div class="gleif-trustmark-box d-flex justify-content-center">
+                <img src="assets/img/trustmark-bg-lg.png" class="gleif-trustmark-bg img-fluid w-100 "
+                    alt="GLEIF-Trustmark-bg">
+                <!-- <div class="d-flex justify-content-center gleif-trustmark-badge"> -->
+                <img src="assets/img/gleif-trustmark.svg" class="img-fluid gleif-trustmark" alt="GLEIF-Trustmark">
+                <!-- </div> -->
+            </div>
+            <hr>
+
+            <div class="vlei-read-more row col-lg-8 col-md-8 ">
+                <p>Read more about Issuing LE vLEIs <a target="_blank" href="issuing-le-vleis.pdf">here</a> and Terms and Conditions between Provenant and
+                    its customers <a target="_blank" href="contract.pdf">here</a>.</p>
+            </div>
+
+
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="title">
+                <h4>Pricing</h4>
+            </div>
+
+            <div class="price-table-container no-margin">
+                <h5>Initial Issuance</h5>
+                <div class="price-item d-flex justify-content-between no-margin align-items-center">
+                    <!-- <div class=""> -->
+                    <p>Standard entity - Legal Entity vLEI</p>
+                    <p>300 USD</p>
+                    <!-- </div> -->
+                </div>
+                <div class="price-item d-flex justify-content-between no-margin">
+                    <p>Standard entity - OOR vLEI</p>
+                    <p>200 USD</p>
+                </div>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Sole proprietorship or small business - Legal Entity vLEI</p>
+                    <p>200 USD</p>
+                </div>
+                <div class="price-item d-flex justify-content-between ">
+                    <p>Sole proprietorship OOR vLEI</p>
+                    <p>200 USD</p>
+                </div>
+
+
+                <h4>Hosted Wallets</h4>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Cold (start/stop on demand), <i>Support included</i></p>
+                    <p>100 USD/year</p>
+                </div>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Hot (always on), <i>Support included</i></p>
+                    <p>400 USD/year</p>
+                </div>
+
+                <h4>Renewals and Bundles</h4>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Small business bundle <br /><i>LE vLEI, 1 OOR vLEI, 1 Cold hosted wallet, Support</i></p>
+                    <p>200 USD/year</p>
+                </div>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Enterprise bundle <br /><i>LE vLEI, up to 5 OOR vLEIs, up to 10 Cold hosted wallet, Support</i>
+                    </p>
+                    <p>1000 USD/year</p>
+                </div>
+
+                <h4>Revocations</h4>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Free</p>
+                    <p>No charge</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about-us" class="about-us">
+            <div class="title">
+                <h4>About</h4>
+            </div>
+
+            <div class="subtitle row col-lg-8 col-md-10 pt-4">
+                <p>Robocalls and spam text messages are a growing problem for consumers and can damage trust in the
+                    brands that they receive these communications from.</p>
+            </div>
+
+            <div class="row col-lg-8 col-md-10 pt-4">
+                <div class="description">
+                    <p>At Provenant, we believe that authentic, end-verifiable digital
+                        communications are essential for protecting both consumers and brands from these threats. That's
+                        why
+                        we
+                        developed our "Origin" solution, which uses zero-trust authentication to ensure that only
+                        verifiable
+                        enterprises and their authorized representatives are able to originate communications on their
+                        behalf.
+                    </p>
+                    <p>By publishing end-verifiable key state, Provenant provides a transparent solution for
+                        telecommunications
+                        providers to verify the identity of any business communicating with identity of any business
+                        communicating with their customers. identity of any business communicating with their customers.
+                        Using
+                        Origin, brands can protect their customers from the damaging effects of electronic impersonation
+                        and
+                        maintain the security and integrity of their own communications. Origin provides an
+                        indispensable
+                        tool
+                        for enterprises looking to securely project their identity across their digital communications,
+                        protect
+                        their customers from robocalls and spam, and achieve compliance with relevant regulations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="learn-more row col-lg-8 col-md-10 pt-5">
+                <p>To learn more about Origin, vLEIs, or Provenant in general, please contact us at <a
+                        href="mailto:info@provenant.net">info@provenant.net</a>
+                </p>
+            </div>
+
+        </section>
+
+        <!-- ======= Footer ======= -->
+        <footer class="footer">
+
+            <hr class="footer-separator">
+
+            <div class="copyright">
+                <p> &copy; <script>document.write(new Date().getFullYear());</script> Provenant Inc. (LEI: <a href="https://search.gleif.org/#/record/984500983AD71E4FBC41">984500983AD71E4FBC41</a> - 8 THE GREEN, STE B, Dover, DE 19901 USA)
+                </p>
+            </div>
+
+        </footer>
+        <!-- End Footer -->
+
+
     </div>
-    <div id="slide-2">
-<p>Emails say they're from our bank, our government, or our service provider. They have the right logo. They say the right things. But who really sent them?</p>
-<p>Provenant's Origin platform answers this question. Every email gets a cryptographically verifiable origin. The sender of the email can't fake their identity.</p>
-<p class="summary">Goodbye, phishing. Hello, <em>authentic digital communication</em>.</p>
-    </div>
-    <div id="slide-3">
-<p>An online news article quotes a famous personality saying something outrageous. There's video to prove the statement actually happened. But is the video real, or a deep fake? Does the journalist cite sources carefully, in a verifiable chain of evidence?</p>
-<p>Provenant's Origin platform makes content and citations verifiable. Every fact can be linked to its source, and content becomes tamper-proof. The content can be linked strongly to the public, non-repudiable reputation of its original creators.</p>
-<p class="summary">Goodbye, deep fakes. Hello, <em>authentic digital communication</em>.</p>
-    </div>
-    <div id="slide-4">
-<p>A company posts their latest financial report. The numbers are surprising, and their website had a strange outage that might indicate hacking. Is the report trustworthy?</p>
-<p>Provenant's Origin platform makes signing and verification of whole documents, or individual facts in documents, easy. Every signed document becomes tamper-proof, with a cryptographically verifiable origin. The author and attestors are known with certainty.</p>
-<p class="summary">Goodbye, hacked documents. Hello, <em>authentic digital communication</em>.</p>
-    </div>
-    <div id="slide-5">
-<p>Unsolicited calls from questionable sources are rife. We answer scammers or telemarketers during work meetings and family events, and feel victimized.</p>
-<p>Regulators expect carriers to fix this. But caller ID is iffy. Maybe the caller's phone number is in a database, but the number can be faked...</p>
-<p>Provenant's Origin platform changes this. Every call gets a cryptographically verifiable origin. This doesn't just prove who called; it proves where their business is registered, and what kind of business it is.</p>
-<p class="summary">Goodbye, robocalls. Hello, <em>authentic digital communication</em>.</p>
-    </div>
-  </div>
-</div>
-</div>
 </body>
+
+</html>
