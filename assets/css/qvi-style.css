@@ -347,3 +347,7 @@ a:hover {
     color: #004CB5;
     mix-blend-mode: normal;
 }
+
+.footer .copyright p a {
+    color: #004CB5;
+}
