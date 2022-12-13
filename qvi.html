@@ -1,16 +1,207 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>PROVENANT - authentic digital communication</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
-    </style>
-    <link rel="stylesheet" type="text/css" href="carousel.css" />
+
+    <title>PROVENANT - authentic digital communication</title>
+    <meta name="description" content="authentic digital communication">
+    <meta name="keywords" content="provenant">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Site CSS File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/qvi-style.css" />
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-<h1>Get vLEI Credentials</h1>
-<p>Provenant is a Qualified vLEI Issuer. This means that we are officially enrolled in GLEIF's program for issuing these important credentials, and we have <a href="signedagreement.pdf">committed</a> to be bound by the terms of the <a href="https://www.gleif.org/en/vlei/the-lifecycle-of-a-vlei-issuer/gleif-qualification-of-vlei-issuers/required-documents">vLEI Governance Framework</a>. We can help your organization begin to use its LEI in new digital contexts.</p>
-<p>(trustmark goes here)</p>
-<p>If you are interested in working with us, please send an email to <a href="mailto:vlei-support@provenant.net">vlei-support@provenant.net</a>, and we'll reply with application materials and instructions.</p>
+
+    <div class="container-fluid no-padding">
+
+        <section id="provenant-as-qvi" class="provenant-as-qvi">
+            <div class="header d-flex">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/img/provenant-logo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="tagline col-lg-10">
+                    <p>Authentic Digital Communication
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="get-vlei row col-lg-8 col-md-10">
+                <!-- <div class="col-lg-8 d-flex "> -->
+                <p class="title">Get vLEI Credentials</p>
+                <p class="description">Provenant is a Qualified vLEI Issuer (QVI). This means that we are officially
+                    enrolled in
+                    GLEIF's program for issuing
+                    these important credentials, and we have <a href="signedagreement.pdf">committed</a> to be bound by the terms of the <a
+                        href="https://www.gleif.org/en/vlei/the-lifecycle-of-a-vlei-issuer/gleif-qualification-of-vlei-issuers/required-documents">vLEI Governance Framework</a>.
+                    We can help your organization begin to use its LEI in new digital contexts.</p>
+
+                <p class="description">If you are interested in working with us, please send an email to
+                    <a href="mailto:vlei-support@provenant.net">vlei-support@provenant.net</a>,
+                    and we'll reply with application materials and instructions.
+                </p>
+                <!-- </div> -->
+            </div>
+
+            <div class="gleif-trustmark-box d-flex justify-content-center">
+                <img src="assets/img/trustmark-bg-lg.png" class="gleif-trustmark-bg img-fluid w-100 "
+                    alt="GLEIF-Trustmark-bg">
+                <!-- <div class="d-flex justify-content-center gleif-trustmark-badge"> -->
+                <img src="assets/img/gleif-trustmark.svg" class="img-fluid gleif-trustmark" alt="GLEIF-Trustmark">
+                <!-- </div> -->
+            </div>
+            <hr>
+
+            <div class="vlei-read-more row col-lg-8 col-md-8 ">
+                <p>Read more about Issuing LE vLEIs <a href="#">here</a> and Terms and Conditions between Provenant and
+                    vLEI <a href="#">here</a>.</p>
+            </div>
+
+
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="title">
+                <h4>Pricing</h4>
+            </div>
+
+            <div class="price-table-container no-margin">
+                <h5>Initial Issuance</h5>
+                <div class="price-item d-flex justify-content-between no-margin align-items-center">
+                    <!-- <div class=""> -->
+                    <p>Standard entity - Legal Entity vLEI</p>
+                    <p>300 USD</p>
+                    <!-- </div> -->
+                </div>
+                <div class="price-item d-flex justify-content-between no-margin">
+                    <p>Standard entity - OOR vLEI</p>
+                    <p>200 USD</p>
+                </div>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Sole proprietorship or small business - Legal Entity vLEI</p>
+                    <p>200 USD</p>
+                </div>
+                <div class="price-item d-flex justify-content-between ">
+                    <p>Sole proprietorship OOR vLEI</p>
+                    <p>200 USD</p>
+                </div>
+
+
+                <h4>Hosted Wallets</h4>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Cold (start/stop on demand), <i>Support included</i></p>
+                    <p>100 USD/year</p>
+                </div>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Hot (always on), <i>Support included</i></p>
+                    <p>400 USD/year</p>
+                </div>
+
+                <h4>Renewals and Bundles</h4>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Small business bundle <br /><i>LE vLEI, 1 OOR vLEI, 1 Cold hosted wallet, Support</i></p>
+                    <p>200 USD/year</p>
+                </div>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Enterprise bundle <br /><i>LE vLEI, up to 5 OOR vLEIs, up to 10 Cold hosted wallet, Support</i>
+                    </p>
+                    <p>1000 USD/year</p>
+                </div>
+
+                <h4>Revocations</h4>
+                <div class="price-item d-flex justify-content-between">
+                    <p>Free</p>
+                    <p>No charge</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about-us" class="about-us">
+            <div class="title">
+                <h4>About</h4>
+            </div>
+
+            <div class="subtitle row col-lg-8 col-md-10 pt-4">
+                <p>Robocalls and spam text messages are a growing problem for consumers and can damage trust in the
+                    brands that they receive these communications from.</p>
+            </div>
+
+            <div class="row col-lg-8 col-md-10 pt-4">
+                <div class="description">
+                    <p>At Provenant (LEI: 984500983AD71E4FBC41), we believe that authentic, end-verifiable digital
+                        communications are essential for protecting both consumers and brands from these threats. That's
+                        why
+                        we
+                        developed our "Origin" solution, which uses zero-trust authentication to ensure that only
+                        verifiable
+                        enterprises and their authorized representatives are able to originate communications on their
+                        behalf.
+                    </p>
+                    <p>By publishing end-verifiable key state, Provenant provides a transparent solution for
+                        telecommunications
+                        providers to verify the identity of any business communicating with identity of any business
+                        communicating with their customers. identity of any business communicating with their customers.
+                        Using
+                        Origin, brands can protect their customers from the damaging effects of electronic impersonation
+                        and
+                        maintain the security and integrity of their own communications. Origin provides an
+                        indispensable
+                        tool
+                        for enterprises looking to securely project their identity across their digital communications,
+                        protect
+                        their customers from robocalls and spam, and achieve compliance with relevant regulations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="learn-more row col-lg-8 col-md-10 pt-5">
+                <p>To learn more about Origin, vLEIs, or Provenant in general, please contact us at <a
+                        href="mailto:info@provenant.net">info@provenant.net</a>
+                </p>
+            </div>
+
+        </section>
+
+        <!-- ======= Footer ======= -->
+        <footer class="footer">
+
+            <hr class="footer-separator">
+
+            <div class="copyright">
+                <p> &copy; Provenant
+                    <script>document.write(new Date().getFullYear());</script>
+                </p>
+            </div>
+
+        </footer>
+        <!-- End Footer -->
+
+
+    </div>
 </body>
+
 </html>
