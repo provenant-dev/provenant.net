@@ -39,6 +39,26 @@ a:hover {
     color: #F9B334;
 }
 
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-600 {
+    font-weight: 700;
+}
+
+.only-show-lg {
+    display: flex;
+}
+
+.only-show-md {
+    display: none;
+}
+
+.only-show-sm {
+    display: none;
+}
+
 /*--------------------------------------------------------------
 # Provenent-as-QVI Section
 --------------------------------------------------------------*/
@@ -46,14 +66,6 @@ a:hover {
 .provenant-as-qvi {
     padding: 86px 86px 72px 86px;
     background: #004CB5;
-    /* padding: 86px; */
-}
-
-.provenant-as-qvi hr {
-    /* background: #FFFFFF; */
-    opacity: 0.2;
-    border-top: 1px solid #FFFFFF;
-    margin-top: 5%;
 }
 
 .header {
@@ -64,12 +76,17 @@ a:hover {
 }
 
 .tagline p {
-
     font-style: normal;
     font-weight: 600;
     font-size: 72px;
     line-height: 94px;
     color: #FBFBFB;
+}
+
+.provenant-as-qvi hr {
+    opacity: 0.2;
+    border-top: 1px solid #FFFFFF;
+    margin-top: 5em;
 }
 
 
@@ -113,9 +130,9 @@ a:hover {
 }
 
 .gleif-trustmark-box {
-    height: 458px;    
-    margin-top: 112px;
-    margin-bottom: 72px;
+    height: 458px;
+    margin-top: 7em;
+    margin-bottom: 4.5em;
 }
 
 .gleif-trustmark-box .gleif-trustmark-bg {
@@ -128,8 +145,8 @@ a:hover {
 }
 
 .gleif-trustmark-box .gleif-trustmark {
-    width: 280px;
-    height: 418px;
+    /* width: 280px;
+    height: 418px; */
     position: absolute;
 }
 
@@ -149,13 +166,114 @@ a:hover {
     mix-blend-mode: normal;
 }
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .provenant-as-qvi {
+        padding: 40px 16px 40px 16px;
+    }
+
+    .header {
+        height: 484px;
+    }
+
+    .tagline p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .get-vlei .title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .get-vlei .description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .gleif-trustmark-box {
+        height: 300px;
+        margin-top: 3em;
+    }
+/* 
+    .gleif-trustmark-box .gleif-trustmark-bg {
+        align-self: end;
+        height: 256px;
+    } */
+
+    .vlei-read-more p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .only-show-lg {
+        display: none;
+    }
+    
+    .only-show-md {
+        display: none;
+    }
+    
+    .only-show-sm {
+        display: flex;
+    }
+
+}
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {}
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .provenant-as-qvi {
+        padding: 56px 32px 56px 32px;
+    }
+
+    .header {
+        height: 526px;
+    }
+
+    .tagline p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 83px;
+        color: #FBFBFB;
+    }
+
+    .get-vlei .title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .get-vlei .description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .gleif-trustmark-box {
+        height: 398px;
+        margin-top: 5em;
+    }
+
+    .gleif-trustmark-box .gleif-trustmark-bg {
+        align-self: end;
+        height: 388px;
+    }
+
+    .only-show-lg {
+        display: none;
+    }
+    
+    .only-show-md {
+        display: flex;
+    }
+    
+    .only-show-sm {
+        display: none;
+    }
+}
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {}
@@ -191,40 +309,19 @@ a:hover {
     margin: 32px 0 0 0;
 }
 
-.price-table-container .price-item {
-    border-bottom: 1px dashed #bfcfe7;
-}
-
-
-.price-table-container h4 {
-    font-family: 'IBM Plex Sans';
+.price-section-title {
     font-style: normal;
-    font-weight: 700;
     font-size: 24px;
     line-height: 31px;
     letter-spacing: 0.5px;
     font-feature-settings: 'ss05' on, 'ss04' on;
     color: #111111;
     mix-blend-mode: normal;
-    padding-bottom: 30px;
-    padding-top: 50px;
-}
-
-.price-table-container h5 {
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 31px;
-    letter-spacing: 0.5px;
-    font-feature-settings: 'ss05' on, 'ss04' on;
-    color: #111111;
-    mix-blend-mode: normal;
-    padding-bottom: 30px;
+    padding-bottom: 1.2em;
+    padding-top: 2em;
 }
 
 .price-table-container .price-item {
-    font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 450;
     font-size: 20px;
@@ -233,7 +330,59 @@ a:hover {
     font-feature-settings: 'ss05' on, 'ss04' on;
     color: #111111;
     mix-blend-mode: normal;
-    margin-bottom: 14px;
+    margin-bottom: 0.8em;
+    border-bottom: 1px dashed #bfcfe7;
+}
+
+@media (max-width: 575.98px) {
+    .pricing {
+        padding: 56px 0px 56px 0px;
+    }
+
+    .pricing .title h4 {
+        margin-left: 0.8em;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .price-table-container {
+        padding: 16px;
+        border-radius: 0px;
+    }
+
+    .price-section-title {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 700;
+    }
+
+    .price-table-container .price-item {
+        font-size: 14px;
+        line-height: 18px;
+        gap: 1em;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .pricing {
+        padding: 56px 32px 56px 32px;
+    }
+
+    .pricing .title h4 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .price-table-container {
+        padding: 24px;
+        border-radius: 0px;
+    }
+
+    .price-section-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -283,6 +432,10 @@ a:hover {
     mix-blend-mode: normal;
 }
 
+.about-us .learn-more {
+    padding-top: 2.5em;
+}
+
 .about-us .learn-more p {
     font-style: normal;
     font-weight: 450;
@@ -295,31 +448,73 @@ a:hover {
 }
 
 .about-us .learn-more a {
-    font-style: normal;
-    font-weight: 450;
-    font-size: 30px;
-    line-height: 44px;
-    letter-spacing: 0.5px;
-    font-feature-settings: 'ss05' on, 'ss04' on;
-    color: #111111;
-    mix-blend-mode: normal;
-}
-
-.about-us .learn-more a {
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 44px;    
-    letter-spacing: 0.5px;
     text-decoration-line: underline;
-    font-feature-settings: 'ss05' on, 'ss04' on;    
     color: #111111;
-    mix-blend-mode: normal;
 }
 
-.about-us .learn-more a:hover {    
+.about-us .learn-more a:hover {
     color: #004CB5;
+}
+
+@media (max-width: 575.98px) {
+    .about-us {
+        padding: 0px 16px 56px 16px;
+    }
+
+    .about-us .title h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .about-us .subtitle p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .about-us .description {
+        column-count: 1;
+    }
+
+    .about-us .description p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .about-us .learn-more p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .about-us {
+        padding: 0px 32px 56px 32px;
+    }
+
+    .about-us .title h4 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .about-us .subtitle p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .about-us .description {
+        column-count: 1;
+    }
+
+    .about-us .description p {
+        font-size: 18px;
+    }
+
+    .about-us .learn-more p {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -327,7 +522,7 @@ a:hover {
 --------------------------------------------------------------*/
 
 .footer {
-    padding: 86px 86px 64px 86px;
+    padding: 50px 86px 64px 86px;
     background: #FFFFFF;
 }
 
@@ -346,4 +541,17 @@ a:hover {
     font-feature-settings: 'ss05' on, 'ss04' on;
     color: #004CB5;
     mix-blend-mode: normal;
+}
+
+@media (max-width: 575.98px) {
+    .footer {
+        padding: 6px 16px 56px 16px;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .footer {
+        padding: 6px 33px 64px 33px;
+    }
 }
