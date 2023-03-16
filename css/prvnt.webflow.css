@@ -8,6 +8,7 @@
   grid-template-rows: auto auto;
   grid-row-gap: 16px;
   grid-column-gap: 16px;
+  align-items: center;
 }
 
 body {
@@ -128,7 +129,7 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px none #000;
-  background-color: #004cb5;
+  background-color: #004bb500;
   color: #fff;
 }
 
@@ -310,6 +311,11 @@ h1 {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px #e1e1e1;
+  border-radius: 8px;
+
 }
 
 .rl_team8_list {
@@ -353,8 +359,8 @@ h1 {
 }
 
 .heading-2 {
-  margin-right: 100px;
   text-align: left;
+  color: rgb(32 32 32);
 }
 
 .uui-button {
@@ -444,6 +450,9 @@ h1 {
 .uui-pricing07_heading-row {
   margin-top: 0.1rem;
   padding: 1rem 1.5rem 2rem;
+  box-shadow: 0px 0px 20px 0px #e5e5e5;
+  margin: 20px 0px;
+  border-radius: 8px;
 }
 
 .uui-text-size-medium {
@@ -585,7 +594,7 @@ h1 {
 
 .uui-contact01_component {
   max-width: 30rem;
-  margin: 2rem auto 0px;
+  margin: 5rem auto 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -595,6 +604,10 @@ h1 {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  /* border: 1px solid #004cb5; */
+  padding: 20px;
+  box-shadow: 0px 0px 30px #e7e7e7;
+  border-radius: 8px;
 }
 
 .uui-padding-vertical-xhuge-2 {
@@ -613,8 +626,9 @@ h1 {
   position: relative;
   padding: 50px 30px 40px 0px;
   border-bottom: 1px solid #e4ebf3;
-  background-color: #004cb5;
 }
+
+
 
 .container-3 {
   width: 100%;
@@ -628,13 +642,14 @@ h1 {
 }
 
 .uui-text-size-xlarge-2 {
-  padding-right: 8rem;
-  padding-left: 8rem;
+  padding: 0 12rem;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #f2f4f7;
   font-size: 1.25rem;
   line-height: 1.5;
   text-align: center;
+  position: relative;
+  z-index: 999;
 }
 
 .uui-space-small-2 {
@@ -653,6 +668,8 @@ h1 {
   line-height: 1.2;
   font-weight: 600;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .uui-heroheader05_component {
@@ -673,7 +690,7 @@ h1 {
 
 .uui-padding-vertical-xhuge-3 {
   padding-top: 4rem;
-  padding-bottom: 0rem;
+  padding-bottom: 4rem;
 }
 
 .uui-container-large-3 {
@@ -681,7 +698,6 @@ h1 {
   max-width: 80rem;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 40px;
 }
 
 .uui-page-padding-3 {
@@ -715,6 +731,8 @@ h1 {
   padding-left: 4em;
   color: #000;
   text-align: center;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .heading-4 {
@@ -768,12 +786,13 @@ h1 {
 }
 
 .text-block {
-  font-size: 10px;
+  font-size: 14px;
+  line-height: 2;
 }
 
 .image-7 {
   max-width: 60%;
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -1096,7 +1115,7 @@ h1 {
   margin-bottom: 0rem;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #004cb5;
-  font-size: 2.25rem;
+  font-size: 32px;
   line-height: 1.3;
   font-weight: 600;
 }
@@ -1115,12 +1134,13 @@ h1 {
   grid-template-columns: 0.75fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  align-items: center;
 }
 
 .uui-padding-vertical-xhuge-5 {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: transparent;
+  background-color: #E4F3FE;
 }
 
 .icon-small-features {
@@ -1186,10 +1206,10 @@ h1 {
 .section-blue {
   display: block;
   margin-top: 0px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border: 2px none #000;
-  background-color: #f0f6ff;
+  background-color: #E4F3FE;
 }
 
 .footer-container {
@@ -1284,11 +1304,25 @@ h1 {
   background-color: #f0f6ff;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
+  /* background-image: url(/images/DigitalCommunications-scaled.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; */
 }
+
+/* .hero-text-highlight-blue:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: #000;
+  opacity: .7;
+} */
 
 .columns-authentic {
   margin-left: 0px;
   padding-top: 20px;
+  display: flex;
 }
 
 .link-11 {
@@ -1301,6 +1335,10 @@ h1 {
   border-width: 10px;
   border-color: #fff;
   background-color: #e4f3fe;
+  box-shadow: 0px 0px 20px 0px #004cb526;
+  transition: .5s;
+  margin: 10px;
+  border-radius: 8px;
 }
 
 .column-2-authentic {
@@ -1309,6 +1347,8 @@ h1 {
   border-width: 10px;
   border-color: #fff;
   background-color: #e4f3fe;
+  box-shadow: 0px 0px 20px 0px #004cb526;
+  transition: .5s;
 }
 
 .column-3-authentic {
@@ -1320,6 +1360,8 @@ h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-shadow: 0px 0px 20px 0px #004cb526;
+  transition: .5s;
 }
 
 .link-12 {
@@ -1341,10 +1383,8 @@ h1 {
 .about-us-paragraph {
   margin-bottom: 60px;
   padding-top: 40px;
-  padding-right: 4rem;
-  padding-left: 4em;
   color: #000;
-  text-align: center;
+  text-align: left;
 }
 
 .menu-close {
@@ -1391,6 +1431,7 @@ h1 {
 
 .columns-usa {
   padding-top: 20px;
+  display: flex;
 }
 
 .paragraph-column-2 {
@@ -1410,7 +1451,11 @@ h1 {
   text-align: center;
 }
 
-@media screen and (max-width: 991px) {
+.image-1 {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 992px) {
   .rl_menu-icon_line-bottom {
     width: 24px;
     height: 2px;
@@ -1485,20 +1530,12 @@ h1 {
     background-color: transparent;
   }
 
-  .rl_navbar1_link {
-    width: auto;
-    padding: 0.75rem 0rem;
-    font-size: 1.125rem;
-  }
-
   .rl_navbar1_menu {
-    position: absolute;
+    position: static;
     z-index: 0;
     overflow: auto;
-    padding: 1rem 5% 2rem;
     border-bottom: 1px none #000;
     background-color: #014cb4;
-    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.4);
     background-clip: border-box;
     -webkit-text-fill-color: inherit;
   }
@@ -1536,8 +1573,8 @@ h1 {
   }
 
   .uui-padding-vertical-xhuge-3 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .container-8 {
@@ -1554,8 +1591,22 @@ h1 {
   }
 
   .uui-padding-vertical-xhuge-4 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-heading-center-white {
+    padding: 30px;
+  }
+
+  .paragraph-9 {
+    margin-bottom: 10px;
+  }
+
+  .image-7 {
+    max-width: 80%;
+    margin-top: 80px;
+    text-align: center;
   }
 
   .column-1-usa {
@@ -1572,14 +1623,18 @@ h1 {
   }
 
   .uui-layout20_component-copy {
-    grid-row-gap: 1.5rem;
+    grid-row-gap: 1rem;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
   .uui-padding-vertical-xhuge-5 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .uui-layout21_item-list {
+    margin-bottom: 0;
   }
 
   .uui-padding-vertical-xhuge-vlei-blue {
@@ -1609,9 +1664,30 @@ h1 {
   .link-16 {
     color: #fff;
   }
+
+  .uui-text-size-xlarge-2 {
+    padding: 0 4rem;
+  }
+
+  .column-1-authentic {
+    padding: 20px;
+  }
+
+  .image-1 {
+    margin-top: 150px;
+  }
+
+  .rl_team8_component {
+    padding-bottom: 30px;
+  }
+
+  .uui-contact01_component {
+    margin-top: 0;
+  }
+
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .rl_navbar1_logo-link {
     padding-left: 0px;
   }
@@ -1675,7 +1751,7 @@ h1 {
   }
 
   .uui-contact01_component {
-    margin-top: 4rem;
+    margin-top: 0rem;
   }
 
   .uui-padding-vertical-xhuge-2 {
@@ -1695,6 +1771,7 @@ h1 {
 
   .uui-text-size-xlarge-2 {
     font-size: 1.125rem;
+    padding: 0 4rem;
   }
 
   .uui-space-small-2 {
@@ -1774,7 +1851,7 @@ h1 {
 
   .uui-padding-vertical-xhuge-4 {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
   }
 
   .uui-page-padding-4 {
@@ -1797,7 +1874,7 @@ h1 {
 
   .uui-layout21_item-list {
     margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
 
   .uui-heading-medium {
@@ -1812,8 +1889,8 @@ h1 {
   }
 
   .uui-padding-vertical-xhuge-5 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .uui-space-medium {
@@ -1840,9 +1917,70 @@ h1 {
   .link-16 {
     color: #fff;
   }
+
+  .image-7 {
+    margin-top: 100px;
+  }
+
+  .heading-2 {
+    margin-top: 0;
+  }
+
+  .image-1 {
+    margin-top: 135px;
+  }
+
+  .rl_navbar1_menu {
+    position: absolute;
+  }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+  html,
+  body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  .paragraph-column-1 {
+    margin-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    color: #004cb5;
+    text-align: center;
+  }
+
+  .uui-text-size-xlarge-2 {
+    font-size: 1.125rem;
+    padding: 0 2rem;
+  }
+
+  .image-7 {
+    max-width: 40%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .rl_navbar1_menu {
+    position: absolute;
+  }
+
+  .heading-2 {
+    font-size: 25px;
+  }
+
+
 }
 
 @media screen and (max-width: 479px) {
+
+  .rl_navbar1_menu {
+    position: absolute;
+  }
+
   .rl_menu-icon_line-bottom {
     border: 1px none #000;
     background-color: #fff;
@@ -1976,6 +2114,7 @@ h1 {
   .uui-text-size-xlarge-2 {
     padding-right: 0rem;
     padding-left: 0rem;
+    font-size: 1rem;
   }
 
   .uui-heading-xlarge-2 {
@@ -2003,8 +2142,8 @@ h1 {
   }
 
   .uui-padding-vertical-xhuge-3 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .uui-container-large-3 {
@@ -2019,6 +2158,7 @@ h1 {
     padding-top: 0em;
     padding-right: 1rem;
     padding-left: 1em;
+    font-size: 14px;
   }
 
   .section {
@@ -2041,8 +2181,16 @@ h1 {
     flex-direction: column-reverse;
   }
 
+  .image-1 {
+    margin-top: 20px;
+  }
+
   .image-7 {
     margin-top: 20px;
+  }
+
+  .uui-contact01_component {
+    margin-top: 4rem;
   }
 
   .column-6 {
@@ -2072,7 +2220,11 @@ h1 {
   }
 
   .uui-padding-vertical-xhuge-5 {
-    padding-bottom: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  .uui-heading-xlarge-2 {
+    font-size: 2rem;
   }
 
   .section-blue {
@@ -2165,6 +2317,21 @@ h1 {
     margin-bottom: 0px;
     padding-bottom: 20px;
   }
+
+  .columns-authentic,
+  .columns-usa {
+    flex-wrap: wrap;
+  }
+
+  .uui-layout21_item-list {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+
 }
 
 #w-node-_97f047c0-a73c-9f33-18b2-1a7a6cfc9420-2553888d {
@@ -2373,3 +2540,37 @@ h1 {
   align-self: center;
 }
 
+
+.banner {
+  background-position: center;
+  background-size: cover;
+}
+
+/* .banner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  background-color: #004cb5;
+  opacity: .8;
+  left: 0;
+} */
+
+.footer-subscribe {
+  background-color: #004cb5;
+}
+
+.column-1-authentic:hover,
+.column-2-authentic:hover,
+.column-3-authentic:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.margin-zero {
+  margin-top: 0;
+}
+
+.bg-light {
+  background-color: #fff;
+}
