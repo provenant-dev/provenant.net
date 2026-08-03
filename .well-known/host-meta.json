@@ -1,17 +1,17 @@
 {
-  "subject": "https://weboftrust.github.io",
+  "subject": "https://provenant.net",
   "links": [
     {
-      "rel": "https://weboftrust.github.io/rels/oobi",
-      "template": "https://weboftrust.github.io/.well-known/oobi/{said}/index.json",
+      "rel": "https://provenant.net/rels/oobi",
+      "template": "https://provenant.net/.well-known/oobi/{said}/index.json",
       "titles": {
         "en": "Type-agnostic OOBI lookup by SAID/AID"
       }
     },
     {
-      "rel": "https://weboftrust.github.io/rels/discovery-catalog",
+      "rel": "https://provenant.net/rels/discovery-catalog",
       "type": "application/json",
-      "href": "https://weboftrust.github.io/.well-known/oobi/index.json",
+      "href": "https://provenant.net/.well-known/oobi/index.json",
       "titles": {
         "en": "Generated discovery catalog (all OOBI resources)"
       }
