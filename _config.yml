@@ -1,1 +1,19 @@
-include: [".well-known"]
+title: Provenant
+description: "Authentic Digital Communication"
+url: "https://www.provenant.net"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+
+include:
+     - ".well-known"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
