@@ -1,6 +1,6 @@
 title: Provenant
 description: "Authentic Digital Communication"
-url: "https://www.provenant.net"
+url: "https://provenant.net"
 baseurl: ""
 
 markdown: kramdown
@@ -8,6 +8,12 @@ permalink: pretty
 
 exclude:
   - README.md
+  - Gemfile
+  - Gemfile.lock
+  - _site
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
 
 include:
      - ".well-known"

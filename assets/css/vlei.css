@@ -641,7 +641,7 @@ html, body {
   margin-top: var(--space-7);
 }
 
-.contact-wrap /* Page headline — same spec as press room h1 */
+.vlei-wrap .page-headline,
 .page-headline {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(2.2rem, 4.5vw, 3.5rem);

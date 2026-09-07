@@ -6,12 +6,14 @@ page_css: "/assets/css/contact.css"
 page_script: "/assets/js/contact.js"
 ---
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 <main>
 <section class="contact-wrap">
   <div class="wrap">
 
     <p class="eyebrow reveal">Contact</p>
-    <h2 class="head reveal">Let's talk about <em>what comes next</em>.</h2>
+    <h1 class="head reveal">Let's talk about <em>what comes next</em>.</h1>
 
     <div class="contact-grid">
 
@@ -120,6 +122,8 @@ page_script: "/assets/js/contact.js"
             <label class="form-label" for="message">Message <span class="req">*</span></label>
             <textarea class="form-textarea" id="message" name="message" placeholder="Tell us what you're working on and how we can help…" required></textarea>
           </div>
+
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAB9-qoAf-edMyO3r" data-theme="light" style="margin-top:var(--space-4);margin-bottom:var(--space-4);"></div>
 
           <div class="form-actions">
             <button class="btn primary" type="submit">
