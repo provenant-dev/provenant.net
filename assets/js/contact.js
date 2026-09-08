@@ -6,7 +6,7 @@
   var SUBMISSION_URL = window.CONTACT_API_URL || 'https://inbound-inquiries.provenant.net/contact';
 
   if (form) {
-    form.addEventListener('submit', async function(e) {
+    form.addEventListener('submit', function(e) {
       e.preventDefault();
       error.classList.remove('show');
       var required = form.querySelectorAll('[required]');
@@ -30,7 +30,8 @@
         return;
       }
 
-      var turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value;
+      var turnstileInput = form.querySelector('[name="cf-turnstile-response"]');
+      var turnstileToken = turnstileInput ? turnstileInput.value : '';
       if (!turnstileToken) {
         error.textContent = 'Please complete the security check.';
         error.classList.add('show');
@@ -51,30 +52,32 @@
         turnstileToken: turnstileToken,
       };
 
-      try {
-        var res = await fetch(SUBMISSION_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
+      fetch(SUBMISSION_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then(function(res) {
+          if (res.ok) {
+            form.style.display = 'none';
+            success.classList.add('show');
+            if (window.lucide) lucide.createIcons();
+          } else {
+            return res.json().catch(function() { return {}; }).then(function(errData) {
+              throw new Error(errData.error || 'Submission failed');
+            });
+          }
+        })
+        .catch(function() {
+          error.textContent = 'Failed to send message. Please email info@provenant.net directly.';
+          error.classList.add('show');
+          if (window.turnstile) {
+            turnstile.reset();
+          }
+        })
+        .then(function() {
+          if (submitBtn) submitBtn.disabled = false;
         });
-
-        if (res.ok) {
-          form.style.display = 'none';
-          success.classList.add('show');
-          if (window.lucide) lucide.createIcons();
-        } else {
-          var errData = await res.json().catch(function() { return {}; });
-          throw new Error(errData.error || 'Submission failed');
-        }
-      } catch (err) {
-        error.textContent = 'Failed to send message. Please email info@provenant.net directly.';
-        error.classList.add('show');
-        if (window.turnstile) {
-          turnstile.reset();
-        }
-      } finally {
-        if (submitBtn) submitBtn.disabled = false;
-      }
     });
     form.querySelectorAll('input, textarea, select').forEach(function(f) {
       f.addEventListener('input', function() {
