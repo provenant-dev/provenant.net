@@ -85,6 +85,7 @@ Provenant publishes its Qualified vLEI Issuer (QVI) discovery surface at `/.well
   - `/.well-known/oobi/index.json`: Full catalog inventory.
   - `/.well-known/oobi/<SAID>/index.json`: Type-agnostic direct OOBI resolution.
   - `/.well-known/index.html`: Human-readable landing page.
+  - `/oobi/<SAID>/index.json`: Legacy root mirror for backward compatibility.
 
 ### How to Update Discovery Resources
 
@@ -94,7 +95,7 @@ When adding or updating identifiers, witnesses, or schemas:
    ```bash
    python3 scripts/build-wellknown.py --host https://provenant.net
    ```
-3. Commit both the updated source in `well-known-assets/` and the compiled files in `.well-known/`.
+3. Commit both the updated source in `well-known-assets/` and the compiled files in `.well-known/` and `oobi/`.
 
 ---
 

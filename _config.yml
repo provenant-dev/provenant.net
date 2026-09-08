@@ -17,10 +17,6 @@ exclude:
   - .jekyll-cache
   - scripts
   - well-known-assets
-  - dns-research-file.txt
-  - css
-  - images
-  - js
 
 include:
   - ".well-known"
