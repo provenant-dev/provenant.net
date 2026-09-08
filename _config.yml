@@ -8,12 +8,19 @@ permalink: pretty
 
 exclude:
   - README.md
+  - WELL-KNOWN.md
   - Gemfile
   - Gemfile.lock
   - _site
   - vendor
   - .sass-cache
   - .jekyll-cache
+  - scripts
+  - well-known-assets
+  - dns-research-file.txt
+  - css
+  - images
+  - js
 
 include:
   - ".well-known"

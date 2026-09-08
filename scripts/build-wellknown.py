@@ -31,11 +31,11 @@ output -- do not hand-edit it:
 
 4. .well-known/index.html  -- a human landing page rendered from the same catalog.
 
-GitHub Pages serves these as static files (Jekyll runs in safe mode, no custom
-plugins), so the generated output must be committed. Re-run after any source
-change:
+The generated output is committed so the discovery surface is directly browsable
+in the repository and served as static files on GitHub Pages. Re-run after any
+source change:
 
-    python3 scripts/build-wellknown.py [--host https://weboftrust.github.io]
+    python3 scripts/build-wellknown.py --host https://provenant.net
 """
 
 from __future__ import annotations

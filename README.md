@@ -70,7 +70,35 @@ utils/website-contact-form/
 
 ---
 
-## 3. Local Development
+## 3. GLEIF & KERI `.well-known` Discovery
+
+Provenant publishes its Qualified vLEI Issuer (QVI) discovery surface at `/.well-known` adhering to the GLEIF discovery convention.
+
+### Source Assets & Generation
+
+- **Source of truth (`well-known-assets/`)**: Contains raw JSON definitions organized by resource type:
+  - `well-known-assets/aid/`: QVI and Root AIDs (e.g., Provenant QVI, GLEIF Root).
+  - `well-known-assets/schema/`: vLEI credential schemas.
+  - `well-known-assets/witness/`: Witness inception events and endpoints.
+- **Generator script (`scripts/build-wellknown.py`)**: Compiles `well-known-assets/` into:
+  - `/.well-known/host-meta.json`: RFC 6415 machine discovery entry point.
+  - `/.well-known/oobi/index.json`: Full catalog inventory.
+  - `/.well-known/oobi/<SAID>/index.json`: Type-agnostic direct OOBI resolution.
+  - `/.well-known/index.html`: Human-readable landing page.
+
+### How to Update Discovery Resources
+
+When adding or updating identifiers, witnesses, or schemas:
+1. Add or edit the source files under `well-known-assets/<type>/<SAID>/index.json`.
+2. Re-compile the discovery directory:
+   ```bash
+   python3 scripts/build-wellknown.py --host https://provenant.net
+   ```
+3. Commit both the updated source in `well-known-assets/` and the compiled files in `.well-known/`.
+
+---
+
+## 4. Local Development
 
 ### Prerequisites
 
@@ -95,13 +123,13 @@ utils/website-contact-form/
 
 ---
 
-## 4. Deployment & CI/CD
+## 5. Deployment & CI/CD
 
 Deployment is fully automated through GitHub Actions (`.github/workflows/deploy.yml`):
 
 - **Trigger**: Every push to the default branch (`main`) (or a manual `workflow_dispatch`).
 - **Build**: Compiles Jekyll assets with `bundle exec jekyll build --destination ./_site`.
-- **Deploy**: Packages and uploads the `_site/` directory to GitHub Pages using `actions/deploy-pages`.
+- **Deploy**: Packages and uploads the `_site/` directory to GitHub Pages using `actions/deploy-pages` (with `include-hidden-files: true` to publish `/.well-known`).
 
 ### DNS Configuration (Route 53)
 
