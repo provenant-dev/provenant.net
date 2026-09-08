@@ -21,6 +21,15 @@
         return;
       }
 
+      var emailVal = form.email ? form.email.value.trim() : '';
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailVal)) {
+        if (form.email) form.email.style.borderColor = '#C0392B';
+        error.textContent = 'Please enter a valid email address.';
+        error.classList.add('show');
+        return;
+      }
+
       var turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value;
       if (!turnstileToken) {
         error.textContent = 'Please complete the security check.';
