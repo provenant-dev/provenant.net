@@ -1,0 +1,958 @@
+/* ============================================================
+   PROVENANT DESIGN SYSTEM · global entry point
+   Consumers link THIS file. Imports only — no rules here.
+   ============================================================ */
+
+/* ============================================================
+   PROVENANT · WEBFONTS
+   IBM Plex Sans  — primary UI & body
+   IBM Plex Mono  — eyebrows, labels, data, code
+   Barlow Condensed — display headlines & big stats
+   Loaded from Google Fonts CDN. Self-host for production if needed.
+   ============================================================ */
+
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-400-1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-400-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-400-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-500-1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-500-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-500-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-600-1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-600-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-600-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-700-1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-700-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/barlow-condensed-700-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-300-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-300-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-300-3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-300-4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-300-5.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-400-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-400-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-400-3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-400-4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-400-5.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-500-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-500-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-500-3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-500-4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-500-5.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-600-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-600-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-600-3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-600-4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-600-5.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-300-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* ============================================================
+   PROVENANT · COLOR TOKENS
+   Derived from the investor & partner decks (June 2026).
+   Brand DNA: deep navy substrate + teal "proof" accent + gold signal.
+   ============================================================ */
+
+:root {
+  /* ---- Brand core ---------------------------------------- */
+  --provenant-blue:        #014DB5; /* wordmark blue — the registered mark */
+  --provenant-blue-bright: #0070C0; /* link / interactive blue */
+
+  /* ---- Navy substrate (the "proof layer underneath") ----- */
+  --navy-900: #0A1430; /* deepest — full-bleed backdrop base */
+  --navy-800: #0D1B3E; /* primary dark surface */
+  --navy-700: #0F2447; /* raised dark surface */
+  --navy-600: #16273D; /* card on dark */
+  --navy-500: #162D54; /* card border / hairline on dark */
+  --navy-400: #1E3A5F; /* elevated card on dark */
+  --navy-300: #26406A; /* strong hairline on dark */
+
+  /* ---- Teal · the proof / verified accent ---------------- */
+  --teal-600: #012d6e; /* pressed / deep */
+  --teal-500: #013a8a; /* hover / secondary */
+  --teal-400: #014db5; /* PRIMARY accent — verified, proof, go */
+  --teal-300: #1a63c9; /* bright highlight */
+  --teal-tint:#e8eefa; /* teal wash on light surfaces */
+
+  /* ---- Gold · signal / attention ------------------------- */
+  --gold-500: #E0A500; /* pressed */
+  --gold-400: #FFC000; /* PRIMARY signal — emphasis, "what's next" */
+  --gold-tint:#FFF3D1;
+
+  /* ---- Alert · fraud / failure / "before" ---------------- */
+  --red-500:  #C9483C; /* pressed */
+  --red-400:  #E05A4E; /* the ✗ / spoofed / broken state */
+  --red-tint: #FBE7E5;
+
+  /* ---- Neutral slate ramp (text & surfaces) -------------- */
+  --white:     #FFFFFF;
+  --slate-50:  #F2F6FC; /* lightest app surface */
+  --slate-100: #E4EAF3; /* light card / divider */
+  --slate-200: #E2E8F0; /* bright text on dark / light border */
+  --slate-300: #cccccc;
+  --slate-400: #B8C5D9; /* muted text on dark */
+  --slate-500: #94A3B8; /* secondary text on dark */
+  --slate-600: #64748B; /* tertiary / captions */
+  --slate-700: #3A4A63; /* body text on light */
+  --slate-800: #13243F; /* heading text on light */
+  --black:     #0A0F1C;
+
+  /* ============================================================
+     SEMANTIC ALIASES — reference these in product code.
+     Defaults below resolve to the DARK theme (brand-primary).
+     ============================================================ */
+
+  /* Surfaces (dark theme — the signature look) */
+  --bg-base:        var(--navy-900);
+  --surface-1:      var(--navy-800);
+  --surface-2:      var(--navy-700);
+  --surface-card:   var(--navy-600);
+  --surface-raised: var(--navy-400);
+  --surface-tint:   rgba(1, 77, 181, 0.10); /* blue glass */
+
+  /* Text */
+  --text-strong:  var(--white);
+  --text-body:    var(--slate-200);
+  --text-muted:   var(--slate-400);
+  --text-subtle:  var(--slate-500);
+  --text-faint:   var(--slate-600);
+  --text-onaccent:var(--navy-900);
+
+  /* Borders & lines */
+  --border-hairline: var(--navy-500);
+  --border-strong:   var(--navy-300);
+  --border-focus:    var(--teal-400);
+
+  /* Accent roles */
+  --accent:          var(--teal-400); /* proof / verified / primary action */
+  --accent-hover:    var(--teal-300);
+  --accent-press:    var(--teal-500);
+  --accent-ink:      var(--white); /* text on blue fill */
+  --signal:          var(--gold-400); /* attention / next */
+  --danger:          var(--red-400);  /* fraud / failure */
+  --link:            var(--provenant-blue-bright);
+
+  /* Status */
+  --status-verified: var(--teal-400);
+  --status-pending:  var(--gold-400);
+  --status-failed:   var(--red-400);
+}
+
+/* ============================================================
+   LIGHT THEME — the "Bandwidth/partner" variant.
+   Apply to a subtree with class="theme-light" (or data-theme="light").
+   Same brand, inverted substrate: white surfaces, navy ink.
+   ============================================================ */
+.theme-light,
+[data-theme="light"] {
+  --bg-base:        var(--slate-50);
+  --surface-1:      var(--white);
+  --surface-2:      var(--slate-50);
+  --surface-card:   var(--white);
+  --surface-raised: var(--white);
+  --surface-tint:   var(--teal-tint);
+
+  --text-strong:  var(--slate-800);
+  --text-body:    #434343;
+  --text-muted:   var(--slate-600);
+  --text-subtle:  var(--slate-600);
+  --text-faint:   var(--slate-500);
+  --text-onaccent:var(--navy-900);
+
+  --border-hairline: var(--slate-100);
+  --border-strong:   var(--slate-300);
+
+  --accent-ink:   var(--white);
+  --link:         var(--provenant-blue);
+}
+
+/* ============================================================
+   PROVENANT · TYPOGRAPHY TOKENS
+   ============================================================ */
+
+:root {
+  /* ---- Families ------------------------------------------ */
+  --font-sans:    'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-display: 'Barlow Condensed', 'IBM Plex Sans', system-ui, sans-serif;
+
+  /* ---- Weights ------------------------------------------- */
+  --fw-light:    300; /* @kind font */
+  --fw-regular:  400; /* @kind font */
+  --fw-medium:   500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold:     700; /* @kind font */
+
+  /* ---- Type scale (px → rem at 16px base) ---------------- */
+  --text-2xs: 0.6875rem;  /* 11px — micro labels */
+  --text-xs:  0.75rem;    /* 12px — eyebrow / caption */
+  --text-sm:  0.875rem;   /* 14px — secondary / fine print */
+  --text-base:1rem;       /* 16px — body */
+  --text-md:  1.125rem;   /* 18px — lead body / subhead */
+  --text-lg:  1.375rem;   /* 22px — card title */
+  --text-xl:  1.75rem;    /* 28px — section title */
+  --text-2xl: 2.25rem;    /* 36px — slide subhead */
+  --text-3xl: 3rem;       /* 48px — headline */
+  --text-4xl: 4rem;       /* 64px — display headline */
+  --text-stat:5.5rem;     /* 88px — big Barlow stat number */
+
+  /* ---- Line heights -------------------------------------- */
+  --leading-tight:  1.05;  /* display */
+  --leading-snug:   1.18;  /* headlines */
+  --leading-normal: 1.45;  /* body-dense */
+  --leading-relaxed:1.6;   /* body */
+
+  /* ---- Letter spacing ------------------------------------ */
+  --tracking-eyebrow: 0.18em;  /* mono uppercase eyebrows */
+  --tracking-label:   0.08em;  /* small caps labels */
+  --tracking-tight:  -0.02em;  /* big display */
+  --tracking-normal:  0;
+
+  /* ---- Semantic roles ------------------------------------ */
+  --eyebrow-font: var(--font-mono);
+  --eyebrow-size: var(--text-xs);
+  --eyebrow-weight: var(--fw-medium);
+  --eyebrow-tracking: var(--tracking-eyebrow);
+
+  --display-font: var(--font-display);
+  --headline-font: var(--font-sans);
+  --body-font: var(--font-sans);
+}
+
+/* ============================================================
+   PROVENANT · SPACING, RADII, SHADOWS, MOTION
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (4px base grid) --------------------- */
+  --space-0:  0;
+  --space-1:  0.25rem;  /*  4px */
+  --space-2:  0.5rem;   /*  8px */
+  --space-3:  0.75rem;  /* 12px */
+  --space-4:  1rem;     /* 16px */
+  --space-5:  1.5rem;   /* 24px */
+  --space-6:  2rem;     /* 32px */
+  --space-7:  2.5rem;   /* 40px */
+  --space-8:  3rem;     /* 48px */
+  --space-9:  4rem;     /* 64px */
+  --space-10: 5rem;     /* 80px */
+  --space-12: 7rem;     /* 112px */
+
+  /* Slide padding rhythm (1280×720 frame) */
+  --slide-pad-x: 5rem;   /* 80px */
+  --slide-pad-y: 3.5rem; /* 56px */
+
+  /* ---- Radii --------------------------------------------- */
+  --radius-xs:  3px;
+  --radius-sm:  6px;
+  --radius-md:  10px;   /* default card / control */
+  --radius-lg:  14px;   /* large card */
+  --radius-xl:  20px;
+  --radius-pill:999px;  /* badges, capsules */
+
+  /* ---- Borders ------------------------------------------- */
+  --border-width: 1px;
+  --border-width-strong: 1.5px;
+
+  /* ---- Shadows ------------------------------------------- */
+  /* On dark surfaces, depth comes from glow + hairline more than shadow. */
+  --shadow-sm:  0 1px 2px rgba(5, 10, 24, 0.35);
+  --shadow-md:  0 6px 20px rgba(5, 10, 24, 0.45);
+  --shadow-lg:  0 18px 50px rgba(5, 10, 24, 0.55);
+  --glow-teal:  0 0 0 1px rgba(1,77,181,0.35), 0 8px 30px rgba(1,77,181,0.18);
+  --glow-gold:  0 0 0 1px rgba(255,192,0,0.35), 0 8px 30px rgba(255,192,0,0.16);
+  /* Light-theme shadows */
+  --shadow-light-sm: 0 1px 2px rgba(19,36,63,0.06);
+  --shadow-light-md: 0 8px 24px rgba(19,36,63,0.08);
+  --shadow-light-lg: 0 20px 48px rgba(19,36,63,0.12);
+
+  /* ---- Motion -------------------------------------------- */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast:    120ms; /* @kind other */
+  --dur-base:    200ms; /* @kind other */
+  --dur-slow:    420ms; /* @kind other */
+
+  /* ---- Layout -------------------------------------------- */
+  --container-max: 1200px;
+  --content-max:   720px;
+}
+
+*,*::before,*::after { box-sizing: border-box; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-family: var(--font-sans); font-size: var(--text-sm); font-weight: var(--fw-medium);
+  padding: 0.7rem 1.15rem; border-radius: var(--radius-md);
+  border: var(--border-width) solid var(--border-strong);
+  background: transparent; color: var(--text-strong); cursor: pointer;
+  transition: border-color var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+
+.btn:hover { border-color: var(--accent); }
+
+.btn:active { transform: translateY(1px); }
+
+.btn.primary {
+  background: var(--accent); color: var(--accent-ink); border-color: transparent;
+  box-shadow: 0 1px 0 rgba(1,77,181,0.25);
+}
+
+.btn.primary:hover { background: var(--accent-hover); }
+
+.btn.primary:active { background: var(--accent-press); }
+
+.btn .ico { width: 15px; height: 15px; }
+
+.nav {
+  position: sticky; top: 0; z-index: 40;
+  background: color-mix(in oklab, var(--bg-base) 86%, transparent);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: var(--border-width) solid var(--border-hairline);
+}
+
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+
+.brand { display: flex; align-items: center; gap: 0.6rem; }
+
+.brand img { height: 22px; width: auto; }
+
+.brand .logo-dark { display: none; }
+
+.navlinks { display: flex; align-items: center; gap: 1.6rem; }
+
+.navlinks a {
+  font-size: var(--text-sm); color: var(--text-muted);
+  transition: color var(--dur-base) var(--ease-out);
+}
+
+.navlinks a:hover { color: var(--text-strong); }
+
+.nav .btn { padding: 0.5rem 0.9rem; }
+
+footer { border-top: var(--border-width) solid var(--border-hairline); padding: var(--space-8) 0 var(--space-6); }
+
+footer .wrap { display: flex; flex-direction: column; gap: var(--space-6); }
+
+footer .footer-top { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: var(--space-6); }
+
+footer .footer-brand { display: flex; flex-direction: column; gap: var(--space-3); }
+
+footer .footer-gleif { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3); max-width: 520px; }
+
+footer .footer-gleif .gleif-footer-badge { width: 200px; height: auto; display: block; }
+
+footer .footer-gleif .gleif-tagline { color: var(--text-muted); font-size: var(--text-sm); font-weight: var(--fw-regular); margin: 0; white-space: nowrap; }
+
+footer .footer-gleif .gleif-copyright { color: var(--text-muted); font-size: var(--text-sm); line-height: 1.5; margin: 0; }
+
+footer .footer-gleif .gleif-copyright a { color: var(--provenant-blue); text-decoration: underline; }
+
+footer .footer-gleif .gleif-copyright a:hover { color: var(--text-strong); }
+
+footer .footer-cols { display: flex; gap: var(--space-8); flex-wrap: wrap; align-items: flex-start; }
+
+footer .footer-col { display: flex; flex-direction: column; gap: 0; }
+
+footer .footer-col h4 { font-family: var(--font-mono); font-size: var(--text-2xs); text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-faint); margin-bottom: var(--space-3); font-weight: var(--fw-medium); }
+
+footer .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); padding: 0; margin: 0; }
+
+footer .footer-col ul li { display: flex; }
+
+footer a { font-size: var(--text-sm); color: var(--text-muted); text-decoration: none; }
+
+footer a:hover { color: var(--text-strong); }
+
+footer .footer-bottom { display: flex; align-items: center; justify-content: flex-end; border-top: var(--border-width) solid var(--border-hairline); padding-top: var(--space-5); }
+
+footer .legal { font-family: var(--font-mono); font-size: var(--text-2xs); letter-spacing: 0.06em; color: var(--text-faint); }
+
+.reveal:not(.in) .tag { visibility: hidden; }
+
+@keyframes rise { from { transform: translateY(14px); } to { transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+
+  .live .pulse { animation: none !important; }
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme-forced]) body {
+    --bg-page:      var(--navy-900);
+    --bg-subtle:    var(--navy-800);
+    --surface-raised:  var(--navy-800);
+    --surface-sunken:  var(--navy-950, #080F1A);
+    --text-body:    rgba(255,255,255,0.75);
+    --text-muted:   rgba(255,255,255,0.5);
+    --text-faint:   rgba(255,255,255,0.35);
+    --text-strong:  var(--white);
+    --text-heading: var(--white);
+    --border-hairline: rgba(255,255,255,0.07);
+    --border-default:  rgba(255,255,255,0.12);
+    --border-strong:   rgba(255,255,255,0.22);
+    data-theme-mode: dark;
+  }
+  html:not([data-theme-forced]) .theme-light {
+    color-scheme: dark;
+  }
+  html:not([data-theme-forced]) .brand .logo-light { display: none; }
+  html:not([data-theme-forced]) .brand .logo-dark  { display: block; }
+  html:not([data-theme-forced]) .nav {
+    background: color-mix(in oklab, var(--navy-900) 92%, transparent);
+  }
+}

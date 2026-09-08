@@ -1,1 +1,25 @@
-include: [".well-known"]
+title: Provenant
+description: "Authentic Digital Communication"
+url: "https://provenant.net"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - _site
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+
+include:
+     - ".well-known"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
