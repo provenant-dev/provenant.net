@@ -99,7 +99,7 @@ utils/website-contact-form/
 
 Deployment is fully automated through GitHub Actions (`.github/workflows/deploy.yml`):
 
-- **Trigger**: Every push to the default branch (`main`) or active release branch.
+- **Trigger**: Every push to the default branch (`main`) (or a manual `workflow_dispatch`).
 - **Build**: Compiles Jekyll assets with `bundle exec jekyll build --destination ./_site`.
 - **Deploy**: Packages and uploads the `_site/` directory to GitHub Pages using `actions/deploy-pages`.
 
