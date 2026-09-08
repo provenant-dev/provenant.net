@@ -58,7 +58,7 @@ The backend stack is managed as Infrastructure as Code using AWS CDK in the `ori
 utils/website-contact-form/
 ├── README.md
 └── cdk/
-    ├── bin/app.ts
+    ├── bin/cdk.ts
     ├── lib/website-contact-form-stack.ts
     └── lambda/contact-handler/index.ts
 ```
