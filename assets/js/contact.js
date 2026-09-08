@@ -49,7 +49,7 @@
         country: form.country ? form.country.value : '',
         email: form.email.value.trim(),
         message: form.message.value.trim(),
-        turnstileToken: turnstileToken,
+        turnstileToken: turnstileToken
       };
 
       fetch(SUBMISSION_URL, {
