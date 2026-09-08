@@ -16,7 +16,7 @@ exclude:
   - .jekyll-cache
 
 include:
-     - ".well-known"
+  - ".well-known"
 
 defaults:
   - scope:
