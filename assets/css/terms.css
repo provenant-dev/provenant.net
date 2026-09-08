@@ -641,8 +641,7 @@ html, body {
   margin-top: var(--space-7);
 }
 
-.terms-wrap .page-headline,
-.page-headline {
+.terms-wrap .page-headline {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(2.2rem, 4.5vw, 3.5rem);
   font-weight: 500;
@@ -652,7 +651,7 @@ html, body {
   margin-bottom: 16px;
 }
 
-.page-headline em {
+.terms-wrap .page-headline em {
   font-style: normal;
   font-weight: 500;
   color: #014db5;

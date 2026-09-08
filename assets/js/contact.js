@@ -60,6 +60,9 @@
       } catch (err) {
         error.textContent = 'Failed to send message. Please email info@provenant.net directly.';
         error.classList.add('show');
+        if (window.turnstile) {
+          turnstile.reset();
+        }
       } finally {
         if (submitBtn) submitBtn.disabled = false;
       }
