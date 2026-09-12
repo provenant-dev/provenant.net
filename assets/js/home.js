@@ -48,12 +48,22 @@
     function openModal() {
       modal.classList.add('open');
       document.body.style.overflow = 'hidden';
+      var iframe = modal.querySelector('iframe');
+      if (iframe && iframe.dataset.src && !iframe.hasAttribute('src')) {
+        iframe.src = iframe.dataset.src;
+      }
     }
     function closeModal() {
       modal.classList.remove('open');
       document.body.style.overflow = '';
       var iframe = modal.querySelector('iframe');
-      if (iframe) { var src = iframe.src; iframe.src = ''; iframe.src = src; }
+      if (!iframe) return;
+      if (iframe.dataset.src) {
+        iframe.src = 'about:blank';
+        iframe.removeAttribute('src');
+      } else {
+        var src = iframe.src; iframe.src = ''; iframe.src = src;
+      }
     }
     btn.addEventListener('click', openModal);
     if (closeBtn) closeBtn.addEventListener('click', closeModal);
